@@ -3,14 +3,5 @@
   .content
     .meta
       h1 = tutorial.title
-
-      .weight
-        - weight = data.settings.units.weight || 'kg'
-        span = tutorial.weight.to_s + weight
-
-      .price
-        - currency = data.settings.units.currency || '€'
-        span = currency + tutorial.price.to_s
-
     .body
       = markdown tutorial.body

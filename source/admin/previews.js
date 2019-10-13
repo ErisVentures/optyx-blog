@@ -21,7 +21,7 @@ const BlogPreview = ({entry, widgetFor}) => {
   )
 }
 
-const ProductPreview = ({entry, widgetFor}) => {
+const TutorialPreview = ({entry, widgetFor}) => {
   const data = entry.get('data').toJS()
   return (
     <div className="tutorial-detail">
@@ -29,12 +29,6 @@ const ProductPreview = ({entry, widgetFor}) => {
       <div className="content">
         <div className="meta">
           <h1>{data.title}</h1>
-          <div className="weight">
-            <span>{`${data.weight}kg`}</span>
-          </div>
-          <div className="price">
-            <span>{`€${data.price}`}</span>
-          </div>
         </div>
         <div className="body">{widgetFor('body')}</div>
       </div>
@@ -92,6 +86,6 @@ const NavigationPreview = ({entry}) => {
 }
 
 CMS.registerPreviewTemplate('blog', BlogPreview)
-CMS.registerPreviewTemplate('tutorial', ProductPreview)
+CMS.registerPreviewTemplate('tutorial', TutorialPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)

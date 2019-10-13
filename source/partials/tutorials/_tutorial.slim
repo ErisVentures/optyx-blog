@@ -6,11 +6,3 @@
     .tutorial-content
       .title
         h3 = tutorial.title
-      .price
-        p
-          - currency = data.settings.units.currency || '€'
-          = currency + tutorial.price.to_s
-      .weight
-        p
-          - weight = data.settings.units.weight || 'kg'
-          = tutorial.weight.to_s + weight
