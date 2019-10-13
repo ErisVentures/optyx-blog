@@ -1,10 +1,11 @@
-%product {
+%tutorial {
   color: $text-color;
   margin-bottom: 30px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     a {
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
       text-decoration: none;
     }
   }
@@ -16,20 +17,21 @@
     transition: box-shadow 400ms ease-in-out;
   }
 
-
   img {
     @extend %img-responsive;
   }
 
-  .product-image, .product-content {
+  .tutorial-image,
+  .tutorial-content {
     background-color: #fff;
   }
 
-  .product-content {
+  .tutorial-content {
     padding: 10px 30px;
   }
 
-  .title, .price {
+  .title,
+  .price {
     display: inline-block;
   }
 

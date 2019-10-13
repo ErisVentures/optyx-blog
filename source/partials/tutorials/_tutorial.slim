@@ -1,0 +1,16 @@
+//link to tutorial by converting the title to a slug
+.tutorial
+  = link_to '/tutorial/' + tutorial.title.parameterize + '/'
+    .tutorial-image
+      = image_tag tutorial.image
+    .tutorial-content
+      .title
+        h3 = tutorial.title
+      .price
+        p
+          - currency = data.settings.units.currency || '€'
+          = currency + tutorial.price.to_s
+      .weight
+        p
+          - weight = data.settings.units.weight || 'kg'
+          = tutorial.weight.to_s + weight

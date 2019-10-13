@@ -13,17 +13,17 @@ section.homepage-story
       .story-content
         = markdown data.pages.home.story
 
-section.homepage-products.products
+section.homepage-tutorials.tutorials
   .container
     h2
       | Products
     .row
-      //product is structured: ['filename', 'data']
-      //sort by newest product
-      - data.products.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | product |
+      //tutorial is structured: ['filename', 'data']
+      //sort by newest tutorial
+      - data.tutorials.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | tutorial |
 
         //to get the actual data:
-        = partial 'partials/products/product', locals: {product: product[1]}
+        = partial 'partials/tutorials/tutorial', locals: {tutorial: tutorial[1]}
 
 section.homepage-news.news
   .container

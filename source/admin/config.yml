@@ -8,23 +8,20 @@ public_folder: /images/uploads
 
 collections:
   #yaml middleman data example
-  - name: product
-    label: Product
+  - name: tutorial
+    label: Tutorial
     format: yml
     extension: yml
-    folder: data/products/
+    folder: data/tutorials/
     create: true
     slug: '{{title}}'
     fields:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Image, name: image, widget: image, required: true}
-
-      - {label: Weight, name: weight, widget: number}
-      - {label: Price, name: price, widget: number}
       - {label: Body, name: body, widget: markdown}
 
-#markdown middleman blog example
+  #markdown middleman blog example
   - name: blog
     label: Blog
     folder: source/posts/
@@ -42,7 +39,7 @@ collections:
   - name: pages
     label: Pages
     files:
-      - file: "data/pages/home.yml"
+      - file: 'data/pages/home.yml'
         label: Homepage
         name: home
         fields:
@@ -77,10 +74,10 @@ collections:
             name: currency
             widget: select
             options: ['€', '$', '£']
-            default: '€'
+            default: '$'
 
           - label: Weight
             name: weight
             widget: select
             options: ['kg', ' st', ' lb']
-            default: 'kg'
+            default: ' lb'
