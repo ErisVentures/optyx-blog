@@ -7,6 +7,11 @@ footer {
     height: auto;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
+    .logo img {
+      opacity: 1;
+      filter: brightness(1.3);
+    }
+
     .navigation {
       background-color: transparent;
       a {
@@ -37,18 +42,16 @@ footer {
       display: inline-block;
       text-align: right;
       margin-left: 15px;
-      width: 60px; 
+      width: 60px;
       height: 60px;
       padding: 15px;
       background-color: #fff;
-      border-radius: 50%
-
+      border-radius: 50%;
     }
     img {
       width: 100%;
     }
   }
-
 
   label {
     display: block;
@@ -56,15 +59,15 @@ footer {
     font-size: 18px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    
   }
-  button, input {
+  button,
+  input {
     display: inline-block;
     height: 60px;
     padding: 15px;
     border: none;
     font-size: 18px;
-    line-height: 1.5
+    line-height: 1.5;
   }
   input {
     width: 80%;
@@ -82,12 +85,11 @@ footer {
   }
 }
 
-  
 @media screen and (max-width: $screen-xs-max) {
   footer {
     .header-primary {
-      .logo  a {
-        padding-left: 15px
+      .logo a {
+        padding-left: 15px;
       }
       .nav-button {
         display: none;
@@ -110,7 +112,7 @@ footer {
     }
     button {
       width: 40%;
-    } 
+    }
 
     .footer-content {
       padding: 15px 0 30px;

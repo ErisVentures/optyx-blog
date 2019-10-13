@@ -6,11 +6,11 @@
   z-index: 999;
 
   .logo {
-    width: 173px;
     height: 80px;
-    a {
-      display: block;
-      padding: 26px 30px;
+
+    padding: 10px;
+    img {
+      height: 100%;
     }
   }
 
@@ -30,15 +30,17 @@
       font-size: 18px;
       font-weight: 700;
       color: $text-color;
-      &.active, &:hover, &:focus{
+      &.active,
+      &:hover,
+      &:focus {
         color: $primary-color;
       }
     }
-    @media screen and (max-width: $screen-xs-max){
+    @media screen and (max-width: $screen-xs-max) {
       display: none;
     }
   }
-  .nav-button{
+  .nav-button {
     display: none;
     position: absolute;
     right: 0;
@@ -81,7 +83,7 @@
 
       &.open {
         height: calc(100vh - 80px);
-        display: block
+        display: block;
       }
     }
 
