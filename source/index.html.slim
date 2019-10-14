@@ -25,11 +25,11 @@ section.homepage-tutorials.tutorials
         //to get the actual data:
         = partial 'partials/tutorials/tutorial', locals: {tutorial: tutorial[1]}
 
-section.homepage-news.news
+section.homepage-blog.blog
   .container
     h2
-      | News
-    .news-items
+      | Blog
+    .blog-items
       //get the first two most recent posts
       - blog.articles.first(2).each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
+        = partial 'partials/blog/blog_item', locals: {article: article}

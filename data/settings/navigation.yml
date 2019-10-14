@@ -1,4 +1,4 @@
 nav_items:
   - {label: 'Home', path: '/'}
   - {label: 'Tutorials', path: '/tutorials/'}
-  - {label: 'News', path: '/news'}
+  - {label: 'Blog', path: '/blog'}
