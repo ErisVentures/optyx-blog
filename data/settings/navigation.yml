@@ -1,4 +1,5 @@
 nav_items:
-  - {label: 'Home', path: '/'}
+  - {label: 'Demo', path: 'https://www.optyx.app/#demo'}
+  - {label: 'Download', path: 'https://us-central1-dwigt-api.cloudfunctions.net/downloadDwigt'}
   - {label: 'Tutorials', path: '/tutorials/'}
   - {label: 'Blog', path: '/blog'}

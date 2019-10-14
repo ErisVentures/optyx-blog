@@ -62,6 +62,7 @@ helpers do
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " active" if url == current_page.url
+    options[:target] = "_blank" unless url.start_with?("/")
     link_to(link_text, url, options)
   end
 
