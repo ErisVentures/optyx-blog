@@ -1,0 +1,7 @@
+section.homepage-blog.blog
+  .container
+    h2
+      | #{tagname} Articles
+    .blog-items
+      - page_articles.each do | article |
+        = partial 'partials/blog/blog_item', locals: {article: article}

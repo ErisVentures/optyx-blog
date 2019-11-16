@@ -17,4 +17,4 @@ article.blog-item
 
         p = article.data.description
 
-        = link_to 'Read the story', article, class: 'cta'
+        = link_to (article.tags.include? "tutorial" ? "Start learning" : "Read the story"), article, class: 'cta'

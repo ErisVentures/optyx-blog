@@ -26,8 +26,21 @@ page "/partials/*", layout: false
 page "/admin/*", layout: false
 
 activate :blog do |blog|
-  blog.permalink = "blog/{year}/{title}.html"
+  blog.name = "blog"
+  blog.prefix = "blog"
+  blog.permalink = "{year}/{title}.html"
+  blog.taglink = "tags/{tag}.html"
   blog.sources = "posts/{title}.html"
+  blog.layout = "blog-detail"
+
+  blog.tag_template = "tag.html"
+end
+
+activate :blog do |blog|
+  blog.name = "tutorials"
+  blog.prefix = "tutorials"
+  blog.permalink = "{year}/{title}.html"
+  blog.sources = "tutorials/{title}.html"
   blog.layout = "blog-detail"
 end
 
@@ -38,13 +51,13 @@ end
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 # proxy tutorial.yml files to tutorial.html
-data.tutorials.each do |_filename, tutorial|
-  # tutorial is an array: [filename, {data}]
-  proxy "/tutorials/#{tutorial[:title].parameterize}/index.html", "tutorial.html",
-  locals: {tutorial: tutorial},
-  layout: 'tutorial-detail',
-  ignore: true
-end
+# data.tutorials.each do |_filename, tutorial|
+#   # tutorial is an array: [filename, {data}]
+#   proxy "/tutorials/#{tutorial[:title].parameterize}/index.html", "tutorial.html",
+#   locals: {tutorial: tutorial},
+#   layout: 'tutorial-detail',
+#   ignore: true
+# end
 
 # Helpers
 # Methods defined in the helpers block are available in templates
