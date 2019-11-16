@@ -1,5 +1,7 @@
 import Typography from "typography"
 import GitHub from "typography-theme-github"
+GitHub.baseFontSize = "18px"
+GitHub.scaleRatio = 3
 GitHub.headerFontFamily = ["Raleway", "sans-serif"]
 const typography = new Typography(GitHub)
 

@@ -1,7 +1,14 @@
 :root {
   --base-text-color: hsla(0, 0%, 0%, 0.8);
-  --theme-color: #7250a1;
+  --theme-color: #4c346a;
   --base-spacing: 12px;
+}
+
+.p-2 {
+  padding: var(--base-spacing);
+}
+.p-4 {
+  padding: calc(2 * var(--base-spacing));
 }
 
 * {
@@ -9,7 +16,7 @@
 }
 
 .container {
-  max-width: 760px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -26,4 +33,14 @@ nav a {
 nav a:hover {
   color: var(--theme-color);
   text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 760px;
+  }
 }

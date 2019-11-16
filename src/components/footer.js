@@ -6,12 +6,11 @@
  */
 
 import React from "react"
-import {useStaticQuery, graphql, Link} from "gatsby"
-import Image from "gatsby-image"
 
 export const Footer = () => {
   return (
     <footer
+      className="p-4"
       style={{
         display: "flex",
         flexDirection: "row",
@@ -19,14 +18,14 @@ export const Footer = () => {
         justifyContent: "center",
         width: "100%",
         color: "white",
+        fontSize: 14,
         background: "var(--theme-color)",
-        marginTop: "calc(var(--base-spacing) * 4)",
         padding: "var(--base-spacing)",
       }}
     >
       © {new Date().getFullYear()}, Built by
       {` `}
-      <a style={{color: "white", marginLeft: 5}} href="https://eris.ventures">
+      <a style={{color: "white", marginLeft: 3}} href="https://eris.ventures">
         Eris Ventures
       </a>
     </footer>

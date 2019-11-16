@@ -6,27 +6,9 @@
  */
 
 import React from "react"
-import {useStaticQuery, graphql, Link} from "gatsby"
-import Image from "gatsby-image"
+import {Link} from "gatsby"
 
 export const Header = () => {
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      logo: file(absolutePath: {regex: "/logo.png/"}) {
-        childImageSharp {
-          fixed(height: 60) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <header
       style={{
@@ -44,6 +26,7 @@ export const Header = () => {
           textDecoration: `none`,
           color: `inherit`,
           height: 60,
+          flexShrink: 0,
         }}
         to={`/`}
       >
