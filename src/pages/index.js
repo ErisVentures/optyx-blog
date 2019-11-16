@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Home" />
         <div className="hero" style={{position: "relative"}}>
           <Image
             style={{height: "60vh", minHeight: 400}}
@@ -76,6 +76,7 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            path
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
