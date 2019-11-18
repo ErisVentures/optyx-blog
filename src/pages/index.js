@@ -73,7 +73,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 240)
           fields {
             slug
             path
@@ -82,6 +82,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
+            image
           }
         }
       }
