@@ -8,6 +8,8 @@
 import React from "react"
 import {Link} from "gatsby"
 
+import {Nav} from "./nav"
+
 export const Header = () => {
   return (
     <header
@@ -37,12 +39,7 @@ export const Header = () => {
         />
       </Link>
       <div style={{flexGrow: 1}} />
-      <nav>
-        <a href="https://www.optyx.app/#demo-screenshot">Demo</a>
-        <a href="https://www.optyx.app/">Download</a>
-        <a href="/tutorials/">Tutorials</a>
-        <a href="https://www.optyx.app/#demo-screenshot">Blog</a>
-      </nav>
+      <Nav />
     </header>
   )
 }

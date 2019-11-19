@@ -36,6 +36,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
+footer nav a {
+  color: white;
+  opacity: 0.7;
+}
+
+footer nav a:hover {
+  color: white;
+  opacity: 1;
+}
+
 .container {
   max-width: 960px;
 }

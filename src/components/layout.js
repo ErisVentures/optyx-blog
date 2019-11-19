@@ -9,9 +9,9 @@ class Layout extends React.Component {
   render() {
     const {children} = this.props
     return (
-      <div>
+      <div style={{minHeight: "100vh"}}>
         <Header />
-        <main>{children}</main>
+        <main style={{paddingBottom: 50}}>{children}</main>
         <Footer />
       </div>
     )
