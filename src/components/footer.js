@@ -25,6 +25,7 @@ export const Footer = () => {
     }
 
     document.addEventListener("scroll", listener, {passive: true})
+    listener()
     return () => document.removeEventListener("scroll", listener)
   })
 

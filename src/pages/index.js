@@ -55,7 +55,7 @@ class BlogIndex extends React.Component {
             </p>
           </div>
         </div>
-        <PostList title="Blog" posts={posts} />
+        <PostList title="Latest Posts" posts={posts} />
       </Layout>
     )
   }
