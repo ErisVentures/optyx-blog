@@ -21,4 +21,9 @@ collections:
         widget: "select"
         default: "blog"
         options: ["blog", "tutorial"]
+      - label: "Author"
+        name: "author"
+        widget: "select"
+        default: "patrick"
+        options: ["patrick", "daniel"]
       - {label: "Body", name: "body", widget: "markdown"}

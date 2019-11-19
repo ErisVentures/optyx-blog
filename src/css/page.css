@@ -1,5 +1,6 @@
 :root {
   --base-text-color: hsla(0, 0%, 0%, 0.8);
+  --secondary-text-color: hsla(0, 0%, 0%, 0.6);
   --theme-color: #4c346a;
   --base-spacing: 12px;
 }
@@ -43,4 +44,18 @@ nav a:hover {
   .container {
     max-width: 760px;
   }
+}
+
+.article-container figure {
+  text-align: center;
+  margin: calc(var(--base-spacing) * 3) 0;
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-container figure img {
+  max-width: 75%;
 }

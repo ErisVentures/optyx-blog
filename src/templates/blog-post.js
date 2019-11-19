@@ -1,7 +1,7 @@
 import React from "react"
 import {Link, graphql} from "gatsby"
 
-import Bio from "../components/bio"
+import Bio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {rhythm, scale} from "../utils/typography"
@@ -18,7 +18,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article className="container article-container">
           <header>
             <h1
               style={{
@@ -45,7 +45,7 @@ class BlogPostTemplate extends React.Component {
             }}
           />
           <footer>
-            <Bio />
+            <Bio author={post.frontmatter.author} />
           </footer>
         </article>
 
@@ -95,6 +95,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
         description
       }
