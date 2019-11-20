@@ -23,5 +23,5 @@ Oh, and here's a great quote from this Wikipedia on
 
 <figure>
 <img src="/images/salty_egg.jpg" />
-<cap>An egg that is salty</cap>
+<figcaption>An egg that is salty</figcaption>
 </figure>
