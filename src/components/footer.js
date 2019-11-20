@@ -60,7 +60,7 @@ export const Footer = () => {
       <div style={{opacity: 0.7}}>
         © {new Date().getFullYear()}, Built by
         {` `}
-        <a style={{color: "white", marginLeft: 3}} href="https://eris.ventures">
+        <a style={{color: "white", marginLeft: 3}} href="https://eris.ventures" target="_blank">
           Eris Ventures, LLC
         </a>
       </div>

@@ -8,7 +8,7 @@ export const PostList = ({title = "Posts", posts}) => {
     query ImageQuery {
       postImage: file(absolutePath: {regex: "/homepage-hero.jpg/"}) {
         childImageSharp {
-          fixed(width: 300, height: 200) {
+          fixed(width: 400, height: 250) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -25,7 +25,10 @@ export const PostList = ({title = "Posts", posts}) => {
           <article key={node.fields.slug} style={{display: "flex"}}>
             <div className="p-2" style={{position: "relative"}}>
               {node.frontmatter.image ? (
-                <img src={node.frontmatter.image} style={{width: 300, height: 200}} />
+                <img
+                  src={node.frontmatter.image}
+                  style={{width: 400, height: 250, objectFit: "cover", marginBottom: 0}}
+                />
               ) : (
                 <Image fixed={data.postImage.childImageSharp.fixed} />
               )}
