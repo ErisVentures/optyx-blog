@@ -67,7 +67,7 @@ export const PostList = ({title = 'Posts', posts, inverted}) => {
                   left: 0,
                 }}
               >
-                {node.frontmatter.date}
+                {node.frontmatter.category === 'tutorial' ? 'TUTORIAL' : node.frontmatter.date}
               </small>
             </div>
             <section className="p-2">
