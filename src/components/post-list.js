@@ -3,7 +3,7 @@ import {Link, useStaticQuery} from 'gatsby'
 import Image from 'gatsby-image'
 import {rhythm} from '../utils/typography'
 
-export const PostList = ({title = 'Posts', posts}) => {
+export const PostList = ({title = 'Posts', posts, inverted}) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       postImage: file(absolutePath: {regex: "/homepage-hero.jpg/"}) {
@@ -16,35 +16,55 @@ export const PostList = ({title = 'Posts', posts}) => {
     }
   `)
 
+  const imgStyle = {width: 400, height: 250}
   return (
     <div className="container p-4">
-      <h2>{title}</h2>
+      <h2
+        style={
+          inverted
+            ? {color: 'var(--inverted-text-color)', borderColor: 'var(--inverted-text-color)'}
+            : {}
+        }
+      >
+        {title}
+      </h2>
       {posts.map(({node}) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug} style={{display: 'flex'}}>
-            <div className="p-2" style={{position: 'relative', flexShrink: 0}}>
+          <article
+            key={node.fields.slug}
+            className="p-2"
+            style={{
+              display: 'flex',
+              marginTop: 'calc(var(--base-spacing) * 2)',
+              background: 'white',
+            }}
+          >
+            <div className="m-2" style={{...imgStyle, position: 'relative', flexShrink: 0}}>
               {node.frontmatter.image ? (
                 <img
                   src={node.frontmatter.image}
                   style={{
-                    width: 400,
-                    height: 250,
+                    ...imgStyle,
                     objectFit: 'cover',
                     marginBottom: 0,
                   }}
                 />
               ) : (
-                <Image fixed={data.postImage.childImageSharp.fixed} />
+                <Image
+                  style={imgStyle}
+                  imgStyle={imgStyle}
+                  fixed={data.postImage.childImageSharp.fixed}
+                />
               )}
               <small
                 className="p-2"
                 style={{
                   fontWeight: 'bold',
                   position: 'absolute',
-                  bottom: 'var(--base-spacing)',
+                  bottom: 0,
                   background: 'white',
-                  left: 'var(--base-spacing)',
+                  left: 0,
                 }}
               >
                 {node.frontmatter.date}

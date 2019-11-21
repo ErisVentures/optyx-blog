@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
           className="story"
           style={{
             width: '100%',
-            padding: 'calc(var(--base-spacing) * 4)',
+            padding: 'calc(var(--base-spacing) * 8)',
             background: 'var(--theme-color)',
             color: 'white',
           }}
@@ -55,7 +55,26 @@ class BlogIndex extends React.Component {
             </p>
           </div>
         </div>
-        <PostList title="Latest Posts" posts={posts} />
+        <div
+          style={{
+            background: 'var(--inverted-background-color)',
+            paddingTop: 'calc(var(--base-spacing) * 1)',
+            paddingBottom: 'calc(var(--base-spacing) * 4)',
+          }}
+        >
+          <PostList
+            title="Tutorials"
+            posts={posts
+              .filter(({node}) => node.frontmatter.category === 'tutorial')
+              .sort(
+                (a, b) =>
+                  (a.node.frontmatter.pinnedPosition || 9999) -
+                  (b.node.frontmatter.pinnedPosition || 9999)
+              )}
+            inverted
+          />
+        </div>
+        <PostList title="Latest Posts" posts={posts.slice(0, 3)} />
       </Layout>
     )
   }
@@ -84,6 +103,7 @@ export const pageQuery = graphql`
             description
             category
             image
+            pinnedPosition
           }
         }
       }

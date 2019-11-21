@@ -4,6 +4,7 @@ date: '2019-05-21T22:12:03.284Z'
 image: /images/autocull-profiles.png
 author: patrick
 category: tutorial
+pinnedPosition: 1
 ---
 
 Welcome to Optyx, we're glad you're here! With our tool, you'll be culling your photos at lightning speed in no time with advanced AI that eliminates tedious and repetitive work.

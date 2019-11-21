@@ -50,7 +50,7 @@ export const Footer = () => {
     >
       <Link to="/" style={{lineHeight: 0}}>
         <img
-          style={{height: 24, marginBottom: 0}}
+          style={{height: 24, marginBottom: 0, marginRight: 'calc(var(--base-spacing) / 2)'}}
           src={require('../../content/assets/icon.png')}
           alt={'Optyx Logo'}
         />

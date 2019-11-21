@@ -1,6 +1,10 @@
 :root {
   --base-text-color: hsla(0, 0%, 0%, 0.8);
   --secondary-text-color: hsla(0, 0%, 0%, 0.6);
+
+  --inverted-background-color: #222;
+  --inverted-text-color: #ccc;
+
   --theme-color: #4c346a;
   --base-spacing: 12px;
 }
@@ -10,6 +14,13 @@
 }
 .p-4 {
   padding: calc(2 * var(--base-spacing));
+}
+
+.m-2 {
+  margin: var(--base-spacing);
+}
+.m-4 {
+  margin: calc(2 * var(--base-spacing));
 }
 
 * {
@@ -47,7 +58,13 @@ footer nav a:hover {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (max-width: 1000px) {
