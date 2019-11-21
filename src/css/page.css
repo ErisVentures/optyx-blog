@@ -67,5 +67,25 @@ footer nav a:hover {
 }
 
 .article-container figure img {
-  max-width: 75%;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.article-container figure.figure-left {
+  float: left;
+  margin: calc(var(--base-spacing) * 2);
+}
+
+.article-container figure.figure-right {
+  float: right;
+  margin: calc(var(--base-spacing) * 2);
+}
+
+.clearfix {
+  clear: both;
+  height: 1px;
+}
+
+.figure-1-2 {
+  max-width: 50%;
 }
