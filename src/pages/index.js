@@ -10,11 +10,12 @@ class BlogIndex extends React.Component {
   render() {
     const {data} = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const tutorials = data.tutorials.edges
+    const posts = data.posts.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
+        <SEO title="News, Tips, and Tricks" />
         <div className="hero" style={{position: 'relative'}}>
           <Image
             style={{height: '70vh', minHeight: 400}}
@@ -62,17 +63,7 @@ class BlogIndex extends React.Component {
             paddingBottom: 'calc(var(--base-spacing) * 4)',
           }}
         >
-          <PostList
-            title="Tutorials"
-            posts={posts
-              .filter(({node}) => node.frontmatter.category === 'tutorial')
-              .sort(
-                (a, b) =>
-                  (a.node.frontmatter.pinnedPosition || 9999) -
-                  (b.node.frontmatter.pinnedPosition || 9999)
-              )}
-            inverted
-          />
+          <PostList title="Documentation" posts={tutorials} inverted />
         </div>
         <PostList title="Latest Posts" posts={posts.slice(0, 3)} />
       </Layout>
@@ -89,7 +80,33 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    tutorials: allMarkdownRemark(
+      sort: {fields: [frontmatter___pinnedPosition], order: ASC}
+      filter: {frontmatter: {category: {eq: "tutorial"}}}
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 240)
+          fields {
+            slug
+            path
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            category
+            image
+            pinnedPosition
+          }
+        }
+      }
+    }
+    posts: allMarkdownRemark(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {category: {ne: "tutorial"}}}
+      limit: 10
+    ) {
       edges {
         node {
           excerpt(pruneLength: 240)
