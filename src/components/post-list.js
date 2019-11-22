@@ -29,10 +29,10 @@ export const PostList = ({title = 'Posts', posts, inverted}) => {
         {title}
       </h2>
       {posts.map(({node}) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const title = node.frontmatter.title
         return (
           <article
-            key={node.fields.slug}
+            key={node.fields.path}
             className="p-2"
             style={{
               display: 'flex',
