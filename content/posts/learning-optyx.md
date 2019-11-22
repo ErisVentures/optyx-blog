@@ -4,10 +4,8 @@ date: '2019-05-21T22:12:03.284Z'
 image: /images/autocull-profiles.png
 author: patrick
 category: tutorial
-pinnedPosition: 1
+pinnedPosition: 5
 ---
-
-Welcome to Optyx, we're glad you're here! With our tool, you'll be culling your photos at lightning speed in no time with advanced AI that eliminates tedious and repetitive work.
 
 The culling workflow in Optyx is centered around the concept of groups. Similar photos are grouped together based on content, capture time, and exposure bracketing. The best photo of each group is tagged with a rating or color according to the sharpness, exposure, facial expression, eyes open, and basic composition rules relative to others in the group. The complete workflow looks something like the below:
 

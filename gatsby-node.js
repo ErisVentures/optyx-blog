@@ -68,9 +68,14 @@ exports.onCreateNode = ({node, actions, getNode}) => {
   const {createNodeField} = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const filename = createFilePath({node, getNode}).replace(/^\/\d{4}-\d{1,2}-\d{1,2}\-?/, '')
+    const filename = createFilePath({node, getNode})
+      .replace(/^\/\d{4}-\d{1,2}-\d{1,2}\-?/, '')
+      .replace(/^\//, '')
     const date = new Date(node.frontmatter.date || '2020-01-01')
-    const slug = `/${date.getFullYear()}/${('0' + (date.getMonth() + 1)).slice(-2)}/${filename}`
+    const slug =
+      node.frontmatter.category === 'tutorial'
+        ? `/tutorial/${filename}`
+        : `/${date.getFullYear()}/${('0' + (date.getMonth() + 1)).slice(-2)}/${filename}`
     createNodeField({
       name: `slug`,
       node,
