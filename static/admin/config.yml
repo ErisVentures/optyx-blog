@@ -14,8 +14,8 @@ collections:
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Updated Date', name: 'date', widget: 'datetime'}
-      - {label: 'Description', name: 'description', widget: 'string'}
-      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Description', name: 'description', widget: 'string', required: false}
+      - {label: 'Image', name: 'image', widget: 'image', required: false}
       - label: 'Category'
         name: 'category'
         widget: 'select'
@@ -41,8 +41,8 @@ collections:
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Description', name: 'description', widget: 'string'}
-      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Description', name: 'description', widget: 'string', required: false}
+      - {label: 'Image', name: 'image', widget: 'image', required: false}
       - label: 'Category'
         name: 'category'
         widget: 'select'
