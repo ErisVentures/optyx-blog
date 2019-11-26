@@ -1,13 +1,9 @@
-import React from "react"
+import React from 'react'
 
 export const Nav = () => {
   return (
     <nav>
-      <a
-        href="https://www.optyx.app/#demo-screenshot"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://www.optyx.app/#demo-screenshot" target="_blank" rel="noopener">
         Demo
       </a>
       <a
@@ -19,6 +15,7 @@ export const Nav = () => {
       </a>
       <a href="/tutorials/">Tutorials</a>
       <a href="/blog/">Blog</a>
+      <a href="javascript:void(Tawk_API.toggle())">Support</a>
     </nav>
   )
 }
