@@ -1,8 +1,11 @@
 ---
 title: Getting Started
 date: '2019-08-28T22:40:32.169Z'
+description: >-
+  Get started culling at lightning speed with Optyx. Learn step-by-step how to
+  supercharge your workflow and eliminate tedious, repetitive work.
 category: tutorial
-description: Get started culling at lightning speed with Optyx. Learn step-by-step how to supercharge your workflow and eliminate tedious, repetitive work.
+author: patrick
 pinnedPosition: 1
 ---
 
@@ -57,6 +60,6 @@ Congratulations! You've just completed your first photo cull with Optyx. From he
 Enjoyed your experience? Not as smooth as you expected? We'd love to hear from you! Drop us a line at <a href="mailto:feedback@optyx.app">feedback@optyx.app</a>.
 
 <figure>
-<img src="/images/full-shoot-finished.png" height="400"/>
+<img src="/images/full-shoot-finished.png" height="400" />
 <figcaption>Photos will have XMP metadata set, ready for import to your favorite editor!</figcaption>
 </figure>
