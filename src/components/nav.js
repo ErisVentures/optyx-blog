@@ -15,7 +15,7 @@ export const Nav = () => {
       </a>
       <a href="/tutorials/">Tutorials</a>
       <a href="/blog/">Blog</a>
-      <a href="javascript:void(Tawk_API.toggle())">Support</a>
+      <a href="/support/">Support</a>
     </nav>
   )
 }
