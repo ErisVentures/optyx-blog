@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
           className="story"
           style={{
             width: '100%',
-            padding: 'calc(var(--base-spacing) * 8)',
+            padding: 'calc(var(--base-spacing) * 8) 0',
             background: 'var(--theme-color)',
             color: 'white',
           }}

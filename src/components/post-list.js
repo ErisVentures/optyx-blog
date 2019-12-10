@@ -16,7 +16,8 @@ export const PostList = ({title = 'Posts', posts, inverted}) => {
     }
   `)
 
-  const imgStyle = {width: 400, height: 250}
+  const imgWrapStyle = {maxWidth: 400, width: 'calc(100% - 2 * var(--base-spacing))', height: 250}
+  const imgStyle = {...imgWrapStyle, width: '100%'}
   return (
     <div className="container p-4">
       <h2
@@ -33,14 +34,14 @@ export const PostList = ({title = 'Posts', posts, inverted}) => {
         return (
           <article
             key={node.fields.path}
-            className="p-2"
+            className="p-2 post-list__article"
             style={{
               display: 'flex',
               marginTop: 'calc(var(--base-spacing) * 2)',
               background: 'white',
             }}
           >
-            <div className="m-2" style={{...imgStyle, position: 'relative', flexShrink: 0}}>
+            <div className="m-2" style={{...imgWrapStyle, position: 'relative', flexShrink: 0}}>
               {node.frontmatter.image ? (
                 <img
                   src={node.frontmatter.image}

@@ -5,21 +5,23 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import {Link} from "gatsby"
+import React from 'react'
+import {Link} from 'gatsby'
 
-import {Nav} from "./nav"
+import {Nav} from './nav'
 
 export const Header = () => {
+  const [isMiniNav, setMini] = React.useState(true)
+
   return (
     <header
       style={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        width: "100%",
-        background: "white",
-        padding: "var(--base-spacing)",
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        width: '100%',
+        background: 'white',
+        padding: 'var(--base-spacing)',
       }}
     >
       <Link
@@ -34,12 +36,12 @@ export const Header = () => {
       >
         <img
           style={{height: 60, marginBottom: 0}}
-          src={require("../../content/assets/logo.png")}
-          alt={"Optyx Logo"}
+          src={require('../../content/assets/logo.png')}
+          alt={'Optyx Logo'}
         />
       </Link>
       <div style={{flexGrow: 1}} />
-      <Nav />
+      <Nav mini={isMiniNav} setMini={setMini} />
     </header>
   )
 }
