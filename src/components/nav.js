@@ -17,7 +17,7 @@ export const Nav = ({mini, setMini}) => {
           Demo
         </a>
         <a
-          href="https://us-central1-dwigt-api.cloudfunctions.net/downloadDwigt"
+          href="https://us-central1-dwigt-api.cloudfunctions.net/download"
           target="_blank"
           rel="noopener"
         >
