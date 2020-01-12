@@ -18,7 +18,7 @@ The culling workflow in Optyx is centered around the concept of groups. Similar 
 
 ## Autogroup
 
-Autogroup creates photo groups based on content similarity with limits based on the time difference. Autogroup can also automatically identify bracketed shots for HDR or exposure stacking. You can control the aggressiveness of each of these options with the autogroup sliders.
+Autogroup creates photo groups based on content similarity with limits based on the time difference. Autogroup can also automatically identify bracketed shots for HDR or exposure stacking. You can control the aggressiveness of each of these options with the autogroup sliders. Sliding a slider to the right will group more photos together while sliding a slider to the left will group fewer photos together.
 
 <figure class="figure-right">
 <img src="/images/autogroup.png" style="height: 300px;"/>
@@ -35,9 +35,11 @@ Autogroup creates photo groups based on content similarity with limits based on 
 
 Autocull processes each group and tags the best photo. Autocull profiles can be configured to tag photos based on various rules. Default rating-based and color-based profiles are pre-configured, but custom profiles can be added and customized to fit your specific workflow.
 
+The Autocull edit modal allows you to configure any set of conditions and actions you'd like. The actions for each profile will be applied in the order listed. For photos with multiple and conflicting applicable actions, the final action will override a previous action.
+
 <figure>
 <img src="/images/autocull-profiles.png" style="height: 400px;"/>
-<figcaption>Autocull profile pane in the Optyx app</figcaption>
+<figcaption>Autocull profile edit modal in the Optyx app</figcaption>
 </figure>
 
 ### Conditions
@@ -47,6 +49,7 @@ Autocull processes each group and tags the best photo. Autocull profiles can be 
 1. **Happiest Faces** - The photo with the happiest faces, regardless of sharpness or squinting eyes.
 1. **Sharpest** - The photo with the sharpest edges.
 1. **Solo Group** - A photo that is the only photo in its group. When a photo is the only photo in the group, this is the only condition that will match.
+1. **Unmatched** - A photo that does not match any other condition. Used as the default handling mechanism.
 
 ### Actions
 
