@@ -55,7 +55,7 @@ export const Footer = () => {
           alt={'Optyx Logo'}
         />
       </Link>
-      <Nav mini={false} setMini={() => {}}></Nav>
+      <Nav mini={false} setMini={() => {}} isFooter></Nav>
       <div style={{flexGrow: 1}} />
       <div style={{opacity: 0.7}}>
         © {new Date().getFullYear()} - Built by

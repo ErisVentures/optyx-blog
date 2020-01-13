@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Nav = ({mini, setMini}) => {
+export const Nav = ({mini, setMini, isFooter}) => {
   return (
     <nav className={`nav--${mini ? 'mini' : 'full'}`}>
       <div
@@ -26,6 +26,7 @@ export const Nav = ({mini, setMini}) => {
         <a href="/tutorials/">Tutorials</a>
         <a href="/blog/">Blog</a>
         <a href="/support/">Support</a>
+        {isFooter ? <a href="/privacy/">Privacy</a> : null}
       </div>
     </nav>
   )
