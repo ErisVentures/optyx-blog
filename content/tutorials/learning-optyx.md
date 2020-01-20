@@ -74,6 +74,6 @@ There are 5 available management methods:
 
 1. **Unlocked** - Photos will be affected by autogroup, autocull, and explicit user input.
 1. **Manually Managed (Metadata only)** - Photos will NOT be affected by autocull. Autogroup and explicit user input will continue to have an effect.
-1. **Manually Managed (Groups only)** - Photos will be NOT affected by autogroup. Autocull and explicit user input will continue to have an effect.
+1. **Manually Managed (Groups only)** - Photos will NOT be affected by autogroup. Autocull and explicit user input will continue to have an effect.
 1. **Manually Managed** - Photos will NOT be affected by autocull or autogroup. Explicit user input will continue to have an effect.
 1. **Completely Locked** - Photos will NOT be affected by autocull, autogroup, or explicit user input. The photo's metadata cannot be changed within Optyx until the management method is changed.
