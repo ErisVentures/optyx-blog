@@ -1,16 +1,47 @@
-import React from "react"
-import {Link, graphql} from "gatsby"
+import React from 'react'
+import {Link, graphql} from 'gatsby'
 
-import Bio from "../components/author-bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import {rhythm, scale} from "../utils/typography"
+import Bio from '../components/author-bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import {rhythm, scale} from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const {previous, next} = this.props.pageContext
+
+    let photoHeader = <></>
+    if (post.frontmatter.imageCredit && post.frontmatter.image) {
+      const unsplashMatch = post.frontmatter.imageCredit.match(/@(\S+).*Unsplash/)
+      const photoByline = unsplashMatch ? (
+        <figcaption style={{fontSize: 14}}>
+          Photo by{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://unsplash.com/@${unsplashMatch[1]}`}
+          >
+            @{unsplashMatch[1]} on Unsplash
+          </a>
+        </figcaption>
+      ) : (
+        post.frontmatter.imageCredit
+      )
+
+      photoHeader = (
+        <div>
+          <figure className="photo-header">
+            <img
+              src={post.frontmatter.image}
+              style={{width: '100%', maxHeight: 400, objectFit: 'cover'}}
+            />
+            {photoByline}
+          </figure>
+        </div>
+      )
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -37,6 +68,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            {photoHeader}
           </header>
           <section dangerouslySetInnerHTML={{__html: post.html}} />
           <hr
@@ -98,6 +130,8 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         description
+        image
+        imageCredit
       }
     }
   }

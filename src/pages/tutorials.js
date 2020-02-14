@@ -1,9 +1,9 @@
-import React from "react"
-import {graphql} from "gatsby"
+import React from 'react'
+import {graphql} from 'gatsby'
 
-import {PostList} from "../components/post-list"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import {PostList} from '../components/post-list'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class TutorialIndex extends React.Component {
   render() {
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {fields: [frontmatter___date], order: DESC}
+      sort: {fields: [frontmatter___pinnedPosition], order: ASC}
       filter: {frontmatter: {category: {eq: "tutorial"}}}
     ) {
       edges {
