@@ -19,17 +19,17 @@ When working with RAW files, Optyx handles its own parsing and primarily works o
 | Manufacturer       | Format | Supported |
 | ------------------ | ------ | --------- |
 | Canon              | .cr2   | ✅        |
+| Canon (Mirrorless) | .cr3   | ✅        |
 | Sony               | .arw   | ✅        |
 | Nikon              | .nef   | ✅        |
 | Nikon (Legacy)     | .nrw   | ✅        |
 | Fuji               | .raf   | ✅        |
+| Panasonic          | .rw2   | ✅        |
 | Pentax             | .pef   | ✅        |
+| Olympus            | .orf   | ✅        |
 | Leica              | .dng   | ✅        |
 | Apple (iPhone)     | .dng   | ✅        |
 | Samsung (Galaxy)   | .dng   | ✅        |
-| Olympus            | .orf   | 🚫        |
-| Panasonic          | .rw2   | 🚫        |
-| Canon (Mirrorless) | .cr3   | 🚫        |
 | Canon (Legacy)     | .crw   | 🚫        |
 | Hasselblad         | .3fr   | 🚫        |
 
