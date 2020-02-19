@@ -6,7 +6,7 @@ image: ../assets/windows-support.jpg
 
 Hello, Windows! Optyx now has you covered with our latest update bringing first-class Windows 10 support. The team has been hard at work ensuring widespread compatibility.
 
-[Download the Windows installer now](https://us-central1-dwigt-api.cloudfunctions.net/download?platform=windows).
+[Download the Windows installer now](https://www.optyx.app/download?platform=windows).
 
 <figure>
 <img src="../assets/windows-support.jpg"/>

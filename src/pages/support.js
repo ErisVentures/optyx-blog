@@ -22,6 +22,12 @@ class SupportPage extends React.Component {
             imgStyle={{height: '40vh', width: '100%', objectFit: 'cover'}}
             fluid={data.hero.childImageSharp.fluid}
           />
+          <p style={{textAlign: 'right', opacity: 0.5, fontSize: 14}}>
+            Photo by{' '}
+            <a href="https://unsplash.com/@matthewwaring" target="_blank" rel="noopener noreferrer">
+              @matthewwaring on Unsplash
+            </a>
+          </p>
           <p style={{marginTop: 10}}>Questions about the product? Need help getting started?</p>
           <button className="button" onClick={() => Tawk_API.toggle()}>
             Talk to a human now

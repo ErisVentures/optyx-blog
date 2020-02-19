@@ -16,11 +16,7 @@ export const Nav = ({mini, setMini, isFooter}) => {
         <a href="https://www.optyx.app/#demo-screenshot" target="_blank" rel="noopener">
           Demo
         </a>
-        <a
-          href="https://us-central1-dwigt-api.cloudfunctions.net/download"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://www.optyx.app/download" target="_blank" rel="noopener">
           Download
         </a>
         <a href="/tutorials/">Tutorials</a>
