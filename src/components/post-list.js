@@ -43,14 +43,25 @@ export const PostList = ({title = 'Posts', posts, inverted}) => {
           >
             <div className="m-2" style={{...imgWrapStyle, position: 'relative', flexShrink: 0}}>
               {node.frontmatter.image ? (
-                <img
-                  src={node.frontmatter.image}
-                  style={{
-                    ...imgStyle,
-                    objectFit: 'cover',
-                    marginBottom: 0,
-                  }}
-                />
+                node.frontmatter.image.childImageSharp ? (
+                  <Image
+                    fluid={node.frontmatter.image.childImageSharp.fluid}
+                    style={{
+                      ...imgStyle,
+                      objectFit: 'cover',
+                      marginBottom: 0,
+                    }}
+                  />
+                ) : (
+                  <img
+                    src={node.frontmatter.image}
+                    style={{
+                      ...imgStyle,
+                      objectFit: 'cover',
+                      marginBottom: 0,
+                    }}
+                  />
+                )
               ) : (
                 <Image
                   style={imgStyle}

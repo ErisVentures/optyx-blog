@@ -1,11 +1,11 @@
 ---
 title: macOS Catalina Support
 date: '2019-06-24T18:26:47.121Z'
-image: /images/macos-catalina.png
+image: ../assets/macos-catalina.png
 ---
 
 <figure>
-<img src="/images/macos-catalina.png" height="500"/>
+<img src="../assets/macos-catalina.png"/>
 <figcaption>macOS Catalina has new app validation requirements, and Dwigt is ready!</figcaption>
 </figure>
 

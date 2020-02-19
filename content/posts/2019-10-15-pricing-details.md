@@ -1,7 +1,7 @@
 ---
 title: Pricing Announced
 date: '2019-10-15T21:26:47.121Z'
-image: /images/pricing-table.png
+image: ../assets/pricing-table.png
 ---
 
 As we begin to move out of beta, pricing details are finally here! We're committed to providing a free tier for enthusiasts, an unlimited trial experience for professionals, and rejecting monthly subscription models. You don't provide a credit card until you're _confident_ Optyx works for _YOU_!
@@ -13,7 +13,7 @@ To that end, Optyx will be available in three editions:
 - Enterprise
 
 <figure>
-<img src="/images/pricing-table.png" height="400"/>
+<img src="../assets/pricing-table.png"/>
 <figcaption>Free forever, enterprise pricing available</figcaption>
 </figure>
 

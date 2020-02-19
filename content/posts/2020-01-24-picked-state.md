@@ -1,7 +1,7 @@
 ---
 title: 'New Feature: "Picked" Photos'
 date: '2020-01-24T23:21:23.121Z'
-image: /images/picked-state.png
+image: ../assets/picked-state.png
 ---
 
 We're excited to announce a new feature for Optyx, "Picked" photos!
@@ -11,7 +11,7 @@ Here's how it works. You're probably already familiar with Ratings and Color Lab
 This feature is an ideal fit for quickly narrowing down your photos in Optyx before applying other metadata properties or exporting to companion tooling.
 
 <figure>
-<img src="/images/picked-state.png" height="400"/>
+<img src="../assets/picked-state.png"/>
 <figcaption>Use the "Picked" flag to quickly filter your photos in Optyx before applying other metadata properties</figcaption>
 </figure>
 

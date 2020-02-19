@@ -128,15 +128,15 @@ footer nav a:hover {
   text-align: center;
   margin: calc(var(--base-spacing) * 3) 0;
   color: var(--secondary-text-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .article-container figure img {
   object-fit: contain;
   max-width: 100%;
+}
+
+.article-container figcaption {
+  margin-top: var(--base-spacing);
 }
 
 .article-container figure.figure-left {

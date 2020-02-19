@@ -1,7 +1,7 @@
 ---
 title: Announcing Windows Support
 date: '2020-02-02T18:26:47.121Z'
-image: /images/windows-support.jpg
+image: ../assets/windows-support.jpg
 ---
 
 Hello, Windows! Optyx now has you covered with our latest update bringing first-class Windows 10 support. The team has been hard at work ensuring widespread compatibility.
@@ -9,7 +9,7 @@ Hello, Windows! Optyx now has you covered with our latest update bringing first-
 [Download the Windows installer now](https://us-central1-dwigt-api.cloudfunctions.net/download?platform=windows).
 
 <figure>
-<img src="/images/windows-support.jpg" height="500"/>
+<img src="../assets/windows-support.jpg"/>
 <figcaption>Optyx is now Windows-ready 🎉</figcaption>
 </figure>
 

@@ -1,7 +1,7 @@
 ---
 title: 'Enhanced RAW Support: Fujifilm, Panasonic, Olympus, Oh My!'
 date: '2020-02-16T22:12:03.284Z'
-image: /images/brandless-camera.jpg
+image: ../assets/brandless-camera.jpg
 imageCredit: '@jamie452 Unsplash'
 ---
 

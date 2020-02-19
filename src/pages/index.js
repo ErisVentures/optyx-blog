@@ -96,7 +96,13 @@ export const pageQuery = graphql`
             title
             description
             category
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             pinnedPosition
           }
         }
@@ -119,7 +125,13 @@ export const pageQuery = graphql`
             title
             description
             category
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             pinnedPosition
           }
         }

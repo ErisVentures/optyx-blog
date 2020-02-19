@@ -1,7 +1,7 @@
 ---
 title: Working in RAW
 date: '2020-02-07T22:12:03.284Z'
-image: /images/nikon-macbook.jpg
+image: ../assets/nikon-macbook.jpg
 imageCredit: Photo by @glenncarstenspeters on Unsplash
 author: patrick
 category: tutorial

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
+import Image from 'gatsby-image'
 
 import Bio from '../components/author-bio'
 import Layout from '../components/layout'
@@ -33,8 +34,8 @@ class BlogPostTemplate extends React.Component {
       photoHeader = (
         <div>
           <figure className="photo-header">
-            <img
-              src={post.frontmatter.image}
+            <Image
+              fluid={post.frontmatter.image.childImageSharp.fluid}
               style={{width: '100%', maxHeight: 400, objectFit: 'cover'}}
             />
             {photoByline}
@@ -130,7 +131,13 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         description
-        image
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         imageCredit
       }
     }

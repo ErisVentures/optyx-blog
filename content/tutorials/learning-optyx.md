@@ -1,7 +1,7 @@
 ---
 title: Learning Optyx
 date: '2019-05-21T22:12:03.284Z'
-image: /images/autocull-profiles.png
+image: ../assets/autocull-profiles.png
 author: patrick
 category: tutorial
 pinnedPosition: 5
@@ -21,7 +21,7 @@ The culling workflow in Optyx is centered around the concept of groups. Similar 
 Autogroup creates photo groups based on content similarity with limits based on the time difference. Autogroup can also automatically identify bracketed shots for HDR or exposure stacking. You can control the aggressiveness of each of these options with the autogroup sliders. Sliding a slider to the right will group more photos together while sliding a slider to the left will group fewer photos together.
 
 <figure class="figure-right">
-<img src="/images/autogroup.png" style="height: 300px;"/>
+<img src="../assets/autogroup.png" style="height: 300px;"/>
 <figcaption>Autogroup sliders in the Optyx app</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Autocull processes each group and tags the best photo. Autocull profiles can be 
 The Autocull edit modal allows you to configure any set of conditions and actions you'd like. The actions for each profile will be applied in the order listed. For photos with multiple and conflicting applicable actions, the final action will override a previous action.
 
 <figure>
-<img src="/images/autocull-profiles.png" style="height: 400px;"/>
+<img src="../assets/autocull-profiles.png" style="height: 400px;"/>
 <figcaption>Autocull profile edit modal in the Optyx app</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ The Autocull edit modal allows you to configure any set of conditions and action
 Because Optyx allows you to instantly modify the metadata of very large sets of photo, controls are in place to avoid automatically wiping out manually set ratings. We call these controls "management methods", and they're represented in the Optyx app by a lock icon in the top left corner of a photo tile.
 
 <figure>
-<img src="/images/management-methods.png" style="height: 300px;"/>
+<img src="../assets/management-methods.png" style="height: 300px;"/>
 <figcaption>Photos under different management methods in the Optyx app.<br /><i>(left to right)</i> Unlocked, Manually Managed (Metadata only), Manually Managed, Completely Locked</figcaption>
 </figure>
 
