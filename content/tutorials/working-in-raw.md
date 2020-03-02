@@ -12,9 +12,9 @@ pinnedPosition: 10
 
 ## Overview
 
-When working with RAW files, Optyx handles its own parsing and primarily works on the JPEG preview for optimal speed. While the most common camera models are supported natively, some just released and rarer models will require processing with [Adobe's DNG Converter](https://supportdownloads.adobe.com/detail.jsp?ftpID=6809).
+When working with RAW files, Optyx handles its own parsing and primarily works on the JPEG preview for optimal speed. The following RAW formats are all supported out of the box in Optyx, meaning no other dependencies are necessary.
 
-## RAW Format Support
+### RAW Formats Supported
 
 | Manufacturer       | Format | Supported |
 | ------------------ | ------ | --------- |
@@ -32,6 +32,12 @@ When working with RAW files, Optyx handles its own parsing and primarily works o
 | Samsung (Galaxy)   | .dng   | ✅        |
 | Canon (Legacy)     | .crw   | 🚫        |
 | Hasselblad         | .3fr   | 🚫        |
+
+## 1:1 Previews with DNG Converter
+
+Working with RAW becomes a little more complicated when handling 1:1 previews. While the most common camera models are supported natively, certain models will require processing with [Adobe's DNG Converter](https://supportdownloads.adobe.com/detail.jsp?ftpID=6809). **You don't need to manually convert files to DNG with the converter in order to handle them in Optyx. Simply install Adobe DNG Converter in the default system location** before building 1:1 Previews in Optyx to automatically take advantage of fullsize 1:1 previews.
+
+If Optyx is unable to find the DNG Converter and you attempt to create previews for a camera model that requires it, you will be prompted to install the converter instead.
 
 ## Troubleshooting
 
