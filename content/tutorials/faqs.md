@@ -44,12 +44,14 @@ Yes! Any rating or color label assigned by Optyx will appear when imported in Li
 
 ## Does Optyx support RAW format XYZ?
 
-Yes! (Probably). Optyx works with a wide array of RAW formats from tons of camera models and coverage can be even further expanded by installing Adobe's free DNG converter. Checkout our [Working with RAW guide](/tutorials/working-with-raw/) for more details.
+Yes! (Probably). Optyx works with a wide array of RAW formats from tons of camera models and coverage can be even further expanded by installing Adobe's free DNG converter. Checkout our [Working in RAW guide](/tutorials/working-in-raw/) for more details.
 
-## Does Optyx edit my photos?
+## Does Optyx automatically edit my photos too?
 
-Not yet ;) Optyx is a tool for [photo culling](https://fstoppers.com/education/beginners-guide-culling-and-why-we-do-it-89324) designed to be used in conjunction with an editor. Fstoppers explains it nicely...
+Not yet ;)
+
+For now, Optyx is a tool strictly for [photo culling](https://fstoppers.com/education/beginners-guide-culling-and-why-we-do-it-89324) designed to be used in conjunction with another editor like Lightroom. Fstoppers explains it nicely...
 
 > The process of culling is used in every type of photography and is used by professionals and amateurs alike. Culling is simply the process of selecting the best images from a shoot to be edited and delivered to a client.
 
-Our recommended workflow is to cull all your photos in Optyx before importing to another editor such as Lightroom or Luminar. Checkout our [Learning Optyx guide](/tutorials/learning-optyx/) for more details.
+Our recommended workflow is to cull all your photos in Optyx before importing to another editor like Lightroom or Luminar. Checkout our [Learning Optyx guide](/tutorials/learning-optyx/) for more details.
