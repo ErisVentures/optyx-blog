@@ -11,6 +11,12 @@ class SupportPage extends React.Component {
   render() {
     const {data} = this.props
     const siteTitle = data.site.siteMetadata.title
+    const currentTime = new Date()
+    const hourOfDay = currentTime.getUTCHours()
+    const dayOfWeek = currentTime.getUTCDay()
+    const isTooLateOrTooEarly = hourOfDay > 3 && hourOfDay < 15
+    const isWeekend = dayOfWeek === 6 || dayOfWeek === 0 || (dayOfWeek === 1 && hourOfDay < 6)
+    const isOutsideOfBusiness = isTooLateOrTooEarly || isWeekend
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -29,9 +35,27 @@ class SupportPage extends React.Component {
             </a>
           </p>
           <p style={{marginTop: 10}}>Questions about the product? Need help getting started?</p>
-          <button className="button" onClick={() => Tawk_API.toggle()}>
-            Talk to a human now
+          <button
+            className="button"
+            onClick={() => Tawk_API.toggle()}
+            style={{position: 'relative'}}
+          >
+            Chat with a human{isOutsideOfBusiness ? '' : ' now'}
+            <span
+              style={{
+                display: isOutsideOfBusiness ? 'block' : 'none',
+                position: 'absolute',
+                top: '100%',
+                left: 0,
+                right: 0,
+                color: 'rgba(0,0,0,0.5)',
+                fontSize: '65%',
+              }}
+            >
+              (currently closed, best effort only)
+            </span>
           </button>
+
           <a style={{marginLeft: 20}} className="button" href="mailto:support@optyx.app">
             Send an email
           </a>
