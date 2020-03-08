@@ -38,7 +38,7 @@ class SupportPage extends React.Component {
           <button
             className="button"
             onClick={() => Tawk_API.toggle()}
-            style={{position: 'relative'}}
+            style={{position: 'relative', marginRight: 20, marginBottom: 25}}
           >
             Chat with a human{isOutsideOfBusiness ? '' : ' now'}
             <span
@@ -56,7 +56,7 @@ class SupportPage extends React.Component {
             </span>
           </button>
 
-          <a style={{marginLeft: 20}} className="button" href="mailto:support@optyx.app">
+          <a className="button" href="mailto:support@optyx.app">
             Send an email
           </a>
         </div>
