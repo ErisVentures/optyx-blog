@@ -35,7 +35,7 @@ Once the import has completed, you're ready for automatic processing. Select the
 
 Play around with the sliders to experiment with the aggressiveness of grouping: sliding to the right creates larger groups, sliding to the left creates smaller groups.
 
-Manually create groups by shift-clicking or command-clicking on photos and pressing `Cmd+G`. Learn more about how autogroup works in the [Learning Optyx guide](/posts/tutorial/learning-optyx/).
+Manually create groups by shift-clicking or command-clicking on photos and pressing `Cmd+G`. Learn more about how autogroup works in the [Learning Optyx guide](/tutorials/learning-optyx/).
 
 <figure>
 <img src="../assets/full-shoot-autogroup.png"/>
@@ -46,7 +46,7 @@ Manually create groups by shift-clicking or command-clicking on photos and press
 
 Now that your photos are in groups, time to tag the best and ditch the rest! Select the "Autocull" tool in the toolbar, pick the "Rating-based" profile, and click "Run". Photos should now be tagged with a rating based on their quality within their group!
 
-Select the "Color-based" profile if you prefer to work with colors instead of ratings, or create your own profile for the ultimate automated workflow! Learn more about how autocull works in the [Learning Optyx guide](/posts/tutorial/learning-optyx/).
+Select the "Color-based" profile if you prefer to work with colors instead of ratings, or create your own profile for the ultimate automated workflow! Learn more about how autocull works in the [Learning Optyx guide](/tutorials/learning-optyx/).
 
 <figure>
 <img src="../assets/full-shoot-autocull.png"/>
