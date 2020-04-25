@@ -49,6 +49,14 @@ Optyx Pro users also have access to the Optyx Connector Lightroom plugin that le
 
 Optyx Pro users have access to the Optyx Connector Lightroom plugin that let's you invoke Optyx autocull from directly within the Lightroom UI.
 
+### Features
+
+Optyx was designed from the ground up to work in tandem with Lightroom even without a plugin. A vast majority of the scenarios the plugin offers can be accomplished using the standalone app. However, the Optyx Connector does provide a few unique features:
+
+- Autocull photos without leaving Lightroom.
+- Set "Flagged/Rejected" state in Lightroom through Optyx "Picked" results.
+- Automatically create a new shoot and begin Optyx import with one click.
+
 ### Installation
 
 1. Download the Optyx Connector zip file using the [official download link on your Optyx Pro receipt](https://customers.gumroad.com/article/199-how-do-i-access-my-purchase).
