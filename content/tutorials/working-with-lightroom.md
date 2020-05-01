@@ -14,7 +14,7 @@ Some programs like Lightroom handle metadata differently though and sometimes co
 
 Optyx Pro users also have access to the Optyx Connector Lightroom plugin that let's you invoke Optyx autocull from directly within the Lightroom UI. To learn more about working with the plugin, skip to the [Optyx Connector](#optyx-connector) section.
 
-## Recommened Workflow
+## Recommended Workflow
 
 ### New Shoots
 
@@ -58,6 +58,13 @@ Optyx was designed from the ground up to work in tandem with Lightroom even with
 - Automatically create a new shoot and begin Optyx import with one click.
 
 ### Installation
+
+**Requirements**
+
+- Optyx App (v1.1.0 or later)
+- Lightroom Classic (v9.0.0 or later)
+
+**Instructions**
 
 1. Download the Optyx Connector zip file using the [official download link on your Optyx Pro receipt](https://customers.gumroad.com/article/199-how-do-i-access-my-purchase).
 1. Unzip the plugin, and move the `.lrplugin` folder to wherever you store Lightroom plugins. <br />
