@@ -67,19 +67,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Optyx Blog`,
-        short_name: `Optyx Blog`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#4c356b`,
-        display: `minimal-ui`,
-        icon: `content/assets/icon.png`,
-      },
-    },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
