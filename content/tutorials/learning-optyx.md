@@ -31,6 +31,15 @@ Autogroup creates photo groups based on content similarity with limits based on 
 
 <div class="clearfix"></div>
 
+### Autogroup Profiles
+
+Once you've put together a set of slider combinations that you like, you can save them in an autogroup profile. Open the profiles modal by clicking the settings cog in the top right corner of Autogroup and create as many custom profiles as you need.
+
+<figure>
+<img src="../assets/autogroup-profiles.png" style="height: 400px;"/>
+<figcaption>Autogroup profile settings in the Optyx app</figcaption>
+</figure>
+
 ## Autocull
 
 Autocull processes each group and tags the best photo. Autocull profiles can be configured to tag photos based on various rules. Default rating-based and color-based profiles are pre-configured, but custom profiles can be added and customized to fit your specific workflow.
@@ -44,12 +53,26 @@ The Autocull edit modal allows you to configure any set of conditions and action
 
 ### Conditions
 
+#### Selective Conditions
+
+Selective conditions will have exactly one match within each group if the condition is applicable to the photo. For example, even if every photo is blurry in a group, whichever is _least_ blurry will receive the "sharpest" label. Selective conditions are helpful for selecting photos within a group.
+
 1. **Best Overall** - The best overall photo when all features are considered.
 1. **Best Faces** - The photo with the overall best faces, the happiest, sharpest, and most eyes open.
 1. **Happiest Faces** - The photo with the happiest faces, regardless of sharpness or squinting eyes.
 1. **Sharpest** - The photo with the sharpest edges.
 1. **Solo Group** - A photo that is the only photo in its group. When a photo is the only photo in the group, this is the only condition that will match.
 1. **Unmatched** - A photo that does not match any other condition. Used as the default handling mechanism.
+
+#### Absolute Conditions
+
+Absolute conditions apply to every photo regardless of its group status. For example, if every photo in a group has blurry faces, each will receive the "Poor Focus" label. Absolute conditions can be helpful for eliminating entire photo groups.
+
+**NOTE: As of Optyx v1.3, only photos with obvious faces are candidates for absolute conditions.**
+
+1. **Sharp Focus** - Any photo that has all subjects in sharp focus.
+1. **Adequate Focus** - Any photo that has at least one subject in sharp focus or a majority of subjects with acceptable focus.
+1. **Poor Focus** - Any photo that has a majority of subjects out of focus and no subjects in sharp focus.
 
 ### Actions
 
@@ -58,6 +81,26 @@ The Autocull edit modal allows you to configure any set of conditions and action
 1. **Set Management** - Sets the [management method](#management-method) to the specified method.
 1. **Add Management Bit** - Mutates the [management method](#management-method) to add the specified property.
 1. **Remove Management Bit** - Mutates the [management method](#management-method) to remove the specified property.
+
+<a name="workflows"></a>
+
+## Workflows
+
+Once you've built out autogroup and autocull profiles that you like, you can combine them into a **Workflow**. A workflow will run your prefered autogroup profile followed by your preferred autocull profile for total one-click culling.
+
+<div style="display: flex; flex-direction: row">
+
+<figure style="width: 60%; display: inline-block">
+<img src="../assets/workflow-profiles.png"/>
+<figcaption>Workflow settings in the Optyx app</figcaption>
+</figure>
+
+<figure style="width: 30%; display: inline-block; margin-left: 5%;">
+<img src="../assets/run-workflow-button.png"/>
+<figcaption>Run your workflow with a single click</figcaption>
+</figure>
+
+</div>
 
 <a name="management-method"></a>
 
