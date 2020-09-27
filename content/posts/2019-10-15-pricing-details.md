@@ -4,7 +4,7 @@ date: '2019-10-15T21:26:47.121Z'
 image: ../assets/pricing-table.png
 ---
 
-As we begin to move out of beta, pricing details are finally here! We're committed to providing a free tier for enthusiasts, an unlimited trial experience for professionals, and rejecting monthly subscription models. You don't provide a credit card until you're _confident_ Optyx works for _YOU_!
+As we begin to move out of beta, pricing details are finally here! We're excited to provide a free tier for enthusiasts, an unlimited trial experience for professionals, and reject monthly subscription models for Optyx v1. You don't provide a credit card until you're _confident_ Optyx works for _YOU_!
 
 To that end, Optyx will be available in three editions:
 

@@ -4,7 +4,7 @@ date: '2020-05-01T22:12:03.284Z'
 image: ../assets/homepage-hero.jpg
 ---
 
-We're very excited to announce Optyx `v1.1` and a slew of highly requested features from users like you! Insider Preview users should already see these features in `v1.1.0` and all Optyx users should start seeing these features in `v1.1.1`.
+We're very excited to announce the release of Optyx `v1.1` and a slew of highly requested features from users like you! Insider Preview users should already see these features in `v1.1.0` and all Optyx users should start seeing these features in `v1.1.1`.
 
 ### Features
 
