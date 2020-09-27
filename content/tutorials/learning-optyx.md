@@ -68,7 +68,7 @@ Selective conditions will have exactly one match within each group if the condit
 
 Absolute conditions apply to every photo regardless of its group status. For example, if every photo in a group has blurry faces, each will receive the "Poor Focus" label. Absolute conditions can be helpful for eliminating entire photo groups.
 
-**NOTE: As of Optyx v1.3, only photos with obvious faces are candidates for absolute conditions.**
+**NOTE: As of Optyx v1.3, only photos with obvious faces are candidates for absolute conditions. See [Face Focus Detection](#face-focus-detection) for more details on how to define sharp and poor focus thresholds.**
 
 1. **Sharp Focus** - Any photo that has all subjects in sharp focus.
 1. **Adequate Focus** - Any photo that has at least one subject in sharp focus or a majority of subjects with acceptable focus.
@@ -81,8 +81,6 @@ Absolute conditions apply to every photo regardless of its group status. For exa
 1. **Set Management** - Sets the [management method](#management-method) to the specified method.
 1. **Add Management Bit** - Mutates the [management method](#management-method) to add the specified property.
 1. **Remove Management Bit** - Mutates the [management method](#management-method) to remove the specified property.
-
-<a name="workflows"></a>
 
 ## Workflows
 
@@ -101,6 +99,45 @@ Once you've built out autogroup and autocull profiles that you like, you can com
 </figure>
 
 </div>
+
+<a name="face-focus-detection"></a>
+
+## Face Focus Detection
+
+For photos of people, ensuring the correct faces are in focus is critical in determining which shots are best. **Different lighting conditions will have different sharpness expectations.** A shot in a studio with high-quality strobe lighting should always be extremely sharp while a photo in a dimly lit church with natural light will naturally be less defined. Optyx has two features to aid with face sharpness detection that you can adjust for different situations: face focus highlighting and subject focus labels.
+
+### Face Focus Highlighting
+
+Optyx will automatically highlight out-of-focus faces with a red border when a single photo is selected. The saturation of the border color indicates the degree to which the face is out-of-focus, bright red being very out-of-focus and gray being moderately out-of-focus.
+
+Control the thresholds for face highlighting by dragging the `Face Focus Highlighting` slider in `Optyx > Preferences` (`File > Preferences` on Windows).
+
+<div style="display: flex; flex-direction: row">
+
+<figure style="width: 60%; display: inline-block">
+<img src="../assets/face-focus-highlight-example.png"/>
+<figcaption>Example of two out-of-focus faces being highlighted in the Optyx App.</figcaption>
+</figure>
+
+<figure style="width: 30%; display: inline-block; margin-left: 5%;">
+<img src="../assets/face-focus-highlight-pref.png" />
+<figcaption>Preference slider to control face focus highlighting threshold.</figcaption>
+</figure>
+
+</div>
+
+### Subject Focus Labels
+
+Optyx allows you to assign specific metadata based on whether a subject's focus was sharp, adequate, or poor.
+
+Control the expectations for subject focus labels by adjusting the `Face Focus Thresholds` sliders in the autocull profile modal (see [the Autocull section](#autocull) to learn more about how autocull profiles work).
+
+<figure>
+<img src="../assets/face-focus-labels.png" style="height: 400px;"/>
+<figcaption>Face focus label threshold settings in the Optyx App.</figcaption>
+</figure>
+
+The three regions of the sliders represent the three focus labels available. Faces that fall into the green region will be considered to have sharp focus, faces that fall into the red region will be considered to have poor focus, and all faces in the middle will be considered to have adequate focus.
 
 <a name="management-method"></a>
 
