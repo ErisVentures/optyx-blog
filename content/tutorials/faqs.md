@@ -14,6 +14,8 @@ Everyone has questions when starting something new! These FAQs should have you c
 
 ### Mac
 
+**New 2020 Macs with the Apple M1 chip are not supported, even with Rosetta 2**
+
 |                    | Requirement                                                                                      |
 | ------------------ | ------------------------------------------------------------------------------------------------ |
 | Processor          | Intel® processor with 64-bit support, SSE4.2 and AVX instruction sets; 2 GHz or faster processor |
