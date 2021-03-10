@@ -14,7 +14,7 @@ Everyone has questions when starting something new! These FAQs should have you c
 
 ### Mac
 
-**New 2020 Macs with the Apple M1 chip are not supported, even with Rosetta 2**
+**New 2020 Macs with the Apple M1 chip are also compatible when run with Rosetta 2**
 
 |                    | Requirement                                                                                      |
 | ------------------ | ------------------------------------------------------------------------------------------------ |
